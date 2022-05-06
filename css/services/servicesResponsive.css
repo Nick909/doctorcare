@@ -1,0 +1,19 @@
+
+@media screen and (min-width: 1024px) {
+  #services h2 {
+    width: 47rem;
+    margin-inline: auto;
+  }
+
+  #services .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  #services .cards .card {
+    width: 30%;
+    flex-grow: 1;
+  }
+}
+

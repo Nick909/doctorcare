@@ -1,0 +1,20 @@
+
+#services header h2 {
+  margin-bottom: 6rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: #FFFFFF;
+
+  border: 1px solid var(--brand-light);
+  border-radius: .6rem;
+}

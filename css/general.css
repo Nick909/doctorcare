@@ -1,0 +1,217 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+:root {
+  --hue: 190;
+  --primary-color:hsla(var(--hue), 100%, 26%, 1);
+  --headline: hsla(210, 11%, 15%, 1);
+  --paragraph: hsla(210, 9%, 31%, 1);
+
+  --brand-beige: hsla(39, 100%, 97%, 1);
+  --brand-light: hsla(calc(var(--hue) - 22), 23%, 89%, 1);
+  --brand-light-2: hsla(calc(var(--hue) + 10), 14%, 97%, 1);
+  --brand-dark: hsla(var(--hue), 100%, 14%, 1);
+
+  --bg-light: hsla(180, 14%, 97%, 1);
+
+  
+  font-size: 62.5%; /* (10*100)/16 */
+  --nav-height: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'DM sans';
+  font-size: 1.6rem;
+  text-align: center;
+
+  overflow: overlay;
+
+  background-color: var(--bg-light);
+}
+
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-block: 10rem;
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--primary-color);
+  
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+}
+
+section header h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6;
+  line-height: 150%;
+
+  color: var(--paragraph);
+}
+
+.button {
+  background: var(--primary-color);
+  
+  border: none;
+  border-radius: 4rem;
+    
+  padding-block: 1.6rem;
+  padding-inline: 3.2rem;
+
+  width: fit-content;
+  
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  transition: background .2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--brand-dark);
+}
+
+.button:active {
+  color: var(--primary-color);
+  background-color: #FFFFFF;
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: 0.2rem;
+  transition: all 0.2s;
+}
+
+
+.button svg {
+  fill: white;
+} 
+
+.button:active > svg {
+  fill: hsla(170, 100%, 26%, 1);
+}
+
+#backToTopButton {
+  position: fixed;
+  bottom: 2rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 400ms
+}
+
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+  transition: 400ms
+}
+
+#services .card circle {
+  fill: var(--brand-light);
+}
+
+#navigation .logo path[fill*="#00856F"],
+#backToTopButton circle {
+  fill: var(--primary-color);
+}
+
+button.open-menu path[stroke*="#00856F"],
+#contact li path {
+  stroke: var(--primary-color);
+}
+
+body.menu-expanded #navigation .logo path,
+#navigation.scroll .logo path{
+  fill: #FFFFFF;
+}
+
+#navigation.scroll button.open-menu path[stroke*="#00856F"] {
+  stroke: #FFFFFF;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  section {
+    padding-block: 16rem;
+  }
+
+  section header h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+}
