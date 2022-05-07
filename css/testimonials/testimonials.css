@@ -1,0 +1,80 @@
+
+#testimonials header {
+  margin-bottom: 6rem;
+}
+
+#testimonials .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  margin-bottom: 10rem;
+
+}
+
+#testimonials .cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  padding: 3.2rem;
+
+  text-align: left;
+
+  background: #FFFFFF;
+
+  border: 1px solid var(--brand-light);
+  border-radius: .6rem;
+}
+
+#testimonials .cards .card path {
+  fill: var(--primary-color);
+}
+
+#testimonials .cards p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  
+  color: var(--paragraph);
+}
+
+#testimonials .user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+#testimonials .user img {
+  height: 4.2rem;
+  width: 4.2rem;
+}
+
+#testimonials .user p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+#testimonials .brands {
+  display: flex;
+  gap: 9.9rem;
+
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+  padding-inline: 3.2rem;
+}
+
+#testimonials .brands::-webkit-scrollbar {
+  display: none;
+}
+
+#testimonials .brands path {
+  fill: var(--primary-color);
+}
+
+#testimonials .brands path[fill*="white"] {
+  fill: #FFFFFF;
+}
