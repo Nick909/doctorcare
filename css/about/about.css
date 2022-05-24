@@ -1,7 +1,8 @@
 
 #about {
   text-align: left;
-  background-color: var(--brand-beige);
+  background-color: var(--brand-light);
+  padding-top: calc(13rem + 16rem);
 }
 
 #about header h2 {

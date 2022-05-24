@@ -1,4 +1,21 @@
 
+#testimonials {
+  position: relative;
+}
+
+#testimonials::before {
+  content: "";
+  width: 100%;
+  height: calc(145% + var(--nav-height));
+  background: white;
+  display: block;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 #testimonials header {
   margin-bottom: 6rem;
 }
@@ -65,6 +82,8 @@
   white-space: nowrap;
 
   padding-inline: 3.2rem;
+
+  margin-bottom: 16.036rem;
 }
 
 #testimonials .brands::-webkit-scrollbar {
@@ -77,4 +96,39 @@
 
 #testimonials .brands path[fill*="white"] {
   fill: #FFFFFF;
+}
+
+.banner-cta {
+  width: auto;
+  padding: 2.6rem;
+  margin-inline: auto;
+
+  right: 3.2rem;
+  left: 3.2rem;
+  
+  background-color: var(--primary-color);
+  border: 0.1rem solid var(--brand-light);
+  border-radius: 1rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+
+  position: absolute;
+  z-index: 4;
+}
+
+.banner-cta h2 {
+  color: #FFFFFF;
+}
+
+.banner-cta .button {
+  background-color: #FFFFFF;
+  color: var(--primary-color);
+}
+
+.banner-cta .button path {
+  fill: var(--primary-color);
 }

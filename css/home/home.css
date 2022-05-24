@@ -7,7 +7,7 @@
 #home::before {
   content: "";
   width: 100%;
-  height: calc(145% + var(--nav-height));
+  height: calc(76% + var(--nav-height));
   background-color: var(--brand-light);
   display: block;
   

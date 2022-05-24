@@ -154,7 +154,9 @@ section .content p {
   visibility: hidden;
 
   transform: translateY(100%);
-  transition: 400ms
+  transition: 400ms;
+
+  z-index: 10;
 }
 
 
