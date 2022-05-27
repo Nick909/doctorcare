@@ -76,6 +76,10 @@ ScrollReveal({
   #services,
   #services header,
   #services .card,
+  #testimonials header,
+  #testimonials .card,
+  #testimonials .brands,
+  #testimonials .carousel__indicators,
   #about,
   #about header,
   #about header .content
