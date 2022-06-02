@@ -209,6 +209,7 @@ body.menu-expanded #navigation .logo path,
     font-size: 4rem;
     line-height: 5.2rem;
   }
+  
   .col-a {
     grid-area: A;
   }

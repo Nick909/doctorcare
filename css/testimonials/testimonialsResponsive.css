@@ -26,4 +26,17 @@
     
     padding-inline: 0;
   }
+
+  .banner-cta {
+    flex-direction: row;
+    padding: 10rem;
+    justify-content: space-between;
+    height: 30.4rem;
+    width: 112.1rem
+  }
+
+  .banner-cta h2 {
+    font-size: 4rem;
+    text-align: left;
+  }
 }
