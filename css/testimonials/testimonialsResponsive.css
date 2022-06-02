@@ -1,4 +1,29 @@
 
 @media screen and (min-width: 1024px) {
+  .wrapper-content {
+    width: min(112rem, 100%);
+    display: grid;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
   
+  #testimonials h2 {
+    width: 49.7rem;
+    margin-inline: auto;
+  }
+
+  #testimonials .cards {
+    flex-direction: row;
+  }
+
+  #testimonials .brands {
+    justify-content: space-between;
+    gap: initial;
+  
+    overflow-y: initial;
+    overflow-x: initial;
+    white-space: initial;
+    
+    padding-inline: 0;
+  }
 }

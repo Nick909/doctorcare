@@ -8,8 +8,8 @@ function onScroll() {
   showBackToTopButtonOnScroll();
   activateMenuAtCurrentSection(home);
   activateMenuAtCurrentSection(services);
+  activateMenuAtCurrentSection(testimonials);
   activateMenuAtCurrentSection(about);
-  activateMenuAtCurrentSection(contact);
 }
 
 function activateMenuAtCurrentSection(section) {
